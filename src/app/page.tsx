@@ -8,42 +8,42 @@ const features = [
     description: 'Request stories, explanations, or worksheets in local languages.',
     icon: <Globe className="w-12 h-12 text-primary" />,
     href: '/hyper-local-content',
-    color: 'hover:border-pink-400',
+    color: 'hover:border-primary',
   },
   {
     title: 'Differentiated Materials',
     description: 'Generate worksheets for multiple grade levels from textbook photos.',
     icon: <Layers className="w-12 h-12 text-primary" />,
     href: '/differentiated-materials',
-    color: 'hover:border-violet-400',
+    color: 'hover:border-accent',
   },
   {
     title: 'Instant Knowledge Base',
     description: 'Get instant answers to questions with simple analogies.',
     icon: <BrainCircuit className="w-12 h-12 text-primary" />,
     href: '/knowledge-base',
-    color: 'hover:border-yellow-400',
+    color: 'hover:border-primary',
   },
   {
     title: 'Visual Aid Generator',
     description: 'Create simple line drawings and charts from text prompts.',
     icon: <ImageIcon className="w-12 h-12 text-primary" />,
     href: '/visual-aid',
-    color: 'hover:border-green-400',
+    color: 'hover:border-accent',
   },
   {
     title: 'Audio Reading Assessment',
     description: 'Assess student reading by analyzing recorded speech.',
     icon: <Mic className="w-12 h-12 text-primary" />,
     href: '/reading-assessment',
-    color: 'hover:border-blue-400',
+    color: 'hover:border-primary',
   },
   {
     title: 'Game & Lesson Planner',
     description: 'Generate educational games and detailed lesson plans.',
     icon: <ClipboardList className="w-12 h-12 text-primary" />,
     href: '/lesson-planner',
-    color: 'hover:border-red-400',
+    color: 'hover:border-accent',
   },
 ];
 
@@ -67,7 +67,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature) => (
               <Link href={feature.href} key={feature.title} passHref>
-                <Card className={`bg-card/80 backdrop-blur-sm border-2 border-transparent transition-all duration-300 ease-in-out hover:shadow-2xl hover:scale-105 ${feature.color}`}>
+                <Card className={`bg-card border-2 border-transparent transition-all duration-300 ease-in-out hover:shadow-2xl hover:scale-105 ${feature.color}`}>
                   <CardHeader className="flex flex-col items-center text-center">
                     {feature.icon}
                     <CardTitle className="font-headline mt-4 text-2xl">{feature.title}</CardTitle>

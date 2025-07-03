@@ -55,7 +55,7 @@ export default function VisualAidPage() {
       description="Create simple line drawings, diagrams, or charts from a text description."
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-        <Card className="bg-card/80 backdrop-blur-sm">
+        <Card className="bg-card">
           <CardHeader>
             <CardTitle className="font-headline">Describe Your Visual</CardTitle>
             <CardDescription>
@@ -90,7 +90,7 @@ export default function VisualAidPage() {
           </CardContent>
         </Card>
 
-        <Card className="bg-card/80 backdrop-blur-sm">
+        <Card className="bg-card">
           <CardHeader>
             <CardTitle className="font-headline">Generated Visual</CardTitle>
           </CardHeader>

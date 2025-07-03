@@ -54,7 +54,7 @@ export default function KnowledgeBasePage() {
       description="Ask any teaching or subject-related question and get a simple, clear answer with a helpful analogy."
     >
       <div className="max-w-4xl mx-auto">
-        <Card className="bg-card/80 backdrop-blur-sm">
+        <Card className="bg-card">
           <CardHeader>
             <CardTitle className="font-headline">Ask a Question</CardTitle>
             <CardDescription>
@@ -90,7 +90,7 @@ export default function KnowledgeBasePage() {
         </Card>
 
         {(isLoading || generatedAnswer) && (
-           <Card className="mt-8 bg-card/80 backdrop-blur-sm">
+           <Card className="mt-8 bg-card">
             <CardHeader>
               <CardTitle className="font-headline flex items-center">
                 <Sparkles className="mr-2 h-6 w-6 text-yellow-400" />

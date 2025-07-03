@@ -61,7 +61,7 @@ export default function HyperLocalContentPage() {
       description="Create stories, explanations, or worksheets in any local language to make learning more accessible."
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <Card className="bg-card/80 backdrop-blur-sm">
+        <Card className="bg-card">
           <CardHeader>
             <CardTitle className="font-headline">Request Content</CardTitle>
           </CardHeader>
@@ -137,7 +137,7 @@ export default function HyperLocalContentPage() {
           </CardContent>
         </Card>
         
-        <Card className="bg-card/80 backdrop-blur-sm">
+        <Card className="bg-card">
           <CardHeader>
             <CardTitle className="font-headline">Generated Content</CardTitle>
           </CardHeader>

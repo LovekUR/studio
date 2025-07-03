@@ -76,7 +76,7 @@ export default function DifferentiatedMaterialsPage() {
       description="Upload a photo of a textbook page to generate tailored worksheets for different grade levels."
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <Card className="bg-card/80 backdrop-blur-sm">
+        <Card className="bg-card">
           <CardHeader>
             <CardTitle className="font-headline">Create Worksheets</CardTitle>
           </CardHeader>
@@ -131,7 +131,7 @@ export default function DifferentiatedMaterialsPage() {
           </CardContent>
         </Card>
         
-        <Card className="bg-card/80 backdrop-blur-sm">
+        <Card className="bg-card">
           <CardHeader>
             <CardTitle className="font-headline">Generated Worksheets</CardTitle>
           </CardHeader>

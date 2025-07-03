@@ -66,7 +66,7 @@ export default function LessonPlannerPage() {
       description="Automatically generate comprehensive lesson plans and fun educational games for any topic."
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-        <Card className="bg-card/80 backdrop-blur-sm">
+        <Card className="bg-card">
           <CardHeader>
             <CardTitle className="font-headline">Lesson Details</CardTitle>
           </CardHeader>
@@ -139,7 +139,7 @@ export default function LessonPlannerPage() {
         
         <div className="space-y-8">
             {isLoading && (
-                <Card className="bg-card/80 backdrop-blur-sm">
+                <Card className="bg-card">
                     <CardContent className="min-h-[300px] flex justify-center items-center">
                         <Loader2 className="h-8 w-8 animate-spin text-primary" />
                     </CardContent>
@@ -148,7 +148,7 @@ export default function LessonPlannerPage() {
 
             {generatedPlan ? (
                 <>
-                <Card className="bg-card/80 backdrop-blur-sm">
+                <Card className="bg-card">
                   <CardHeader>
                     <CardTitle className="font-headline flex items-center"><ClipboardList className="mr-2" /> Lesson Plan</CardTitle>
                   </CardHeader>
@@ -156,7 +156,7 @@ export default function LessonPlannerPage() {
                     {generatedPlan.lessonPlan}
                   </CardContent>
                 </Card>
-                <Card className="bg-card/80 backdrop-blur-sm">
+                <Card className="bg-card">
                   <CardHeader>
                     <CardTitle className="font-headline flex items-center"><Gamepad2 className="mr-2" /> Game Description</CardTitle>
                   </CardHeader>
@@ -166,7 +166,7 @@ export default function LessonPlannerPage() {
                 </Card>
                 </>
             ) : !isLoading && (
-                <Card className="bg-card/80 backdrop-blur-sm">
+                <Card className="bg-card">
                     <CardContent className="min-h-[300px] flex justify-center items-center">
                         <p className="text-muted-foreground text-center">Your generated lesson plan and game will appear here.</p>
                     </CardContent>
